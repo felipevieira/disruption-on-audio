@@ -1,0 +1,10 @@
+version: "2"
+services:
+  keras-jupyter:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/usr/app/
+    environment:
+      - JUPYTER_USER_ID=$JUPYTER_USER_ID
